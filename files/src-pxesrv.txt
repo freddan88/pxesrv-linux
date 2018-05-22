@@ -1,0 +1,27 @@
+
+Lighttpd:
+URL: https://download.lighttpd.net/lighttpd/releases-1.4.x
+
++
+
+Download:
+https://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.45.tar.gz
+
+-----------------------------------------------------------------------------
+
+Dnsmasq:
+http://www.thekelleys.org.uk/dnsmasq
+
++
+
+Download:
+http://www.thekelleys.org.uk/dnsmasq/dnsmasq-2.77.tar.gz
+
+-------------------------------------------------------------
+
+Dnsmasq link:
+http://www.thekelleys.org.uk/dnsmasq/
+
+
+Lighttpd link:
+https://www.lighttpd.net/download/

@@ -1,0 +1,10 @@
+wpeinit
+title winpe_x86.iso - [winpe-32Bit]
+@echo off
+cd X:\
+dir
+echo.
+echo Searching for autoexec_x86.cmd in share
+echo ---------------------------------------
+net use P: \\192.168.0.254\pxe /user:pxesrv pxesrv
+P:\pxe-boot\share\autoexec_winpe_x86.cmd

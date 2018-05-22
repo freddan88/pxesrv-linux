@@ -1,0 +1,20 @@
+
+#Private share usable only by pxesrv!
+
+[pxe]
+comment = pxe-boot
+path = /srv/pxesrv/pxe
+valid users = pxesrv
+public = no
+writable = yes
+printable = no
+
+----------------------------------------------------
+
+#Add user to samba-database and configure a password
+#>root@host:/srv# sudo smbpasswd -a pxesrv
+
+#Mount in Windows CMD and Winpe:
+#>net use P: \\{ip}\pxe /user:pxesrv {password}
+
+----------------------------------------------------

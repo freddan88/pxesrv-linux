@@ -1,0 +1,45 @@
+Run all commands bellow in cmd.exe
+
+Create:
+x86 - copype x86 c:\winpe\winpe_x86
+x64 - copype amd64 c:\winpe\winpe_x64
+
+CD:
+cd c:\winpe\winpe_x86
+cd c:\winpe\winpe_x64
+
+Mount:
+dism /mount-wim /wimfile:winpe.wim /index:1 /mountdir:mount
+x86 - xcopy "C:\Program Files\Windows AIK\Tools\x86" mount /E
+x64 - xcopy "C:\Program Files\Windows AIK\Tools\amd64" mount /E
+
+Edit startnet.cmd: (autoexecuting)
+notepad.exe mount\Windows\System32\startnet.cmd
+
+Unmount:
+dism /unmount-wim /mountdir:mount /commit
+# del /Q ISO\boot\bootfix.bin
+move ISO\boot\bootfix.bin ISO\boot\bootfix_bak.bin
+
+Add drivers (Optional):
+dism /add-driver /image:C:\winpe\winpe_x64\mount /driver:C:\winpe\drivers\64\ws64win7.inf
+dism /add-driver /image:C:\winpe\winpe_x86\mount /driver:C:\winpe\drivers\32\ws86win7.inf
+
+List Installed drivers:
+dism /get-drivers /image:C:\winpe\winpe_x64\mount
+dism /get-drivers /image:C:\winpe\winpe_x86\mount
+
+Clean up wim-files:
+dism /cleanup-wim
+
+Create ISO:
+copy winpe.wim ISO\sources\boot.wim
+
+x86 - oscdimg -n -betfsboot.com ISO winpe_x86.iso
+x64 - oscdimg -n -betfsboot.com ISO winpe_x64.iso
+
+LINKS:
+http://technet.microsoft.com/en-us/library/hh825109.aspx
+http://technet.microsoft.com/en-us/library/dn613857.aspx
+http://technet.microsoft.com/en-us/library/dd744537%28v=ws.10%29.aspx
+http://technet.microsoft.com/en-us/library/hh824972.aspx#AddStartupScript
