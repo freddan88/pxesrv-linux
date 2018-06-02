@@ -15,8 +15,6 @@ winpe_x86.cmd will generate winpe_x86.iso (32Bit Winpe that can be used in pxesr
 winpe_x64.cmd will generate winpe_x64.iso (64Bit Winpe that can be used in pxesrv etc.)
 
 I take no responsibility for this script, use at your own risk
-Security and bugs shall be reported to apache php or mysql
-This script is only tested with softwareversions found in httpsrv.sh
 The script is only tested with: Windows 7 32 and 64Bit...
 
 -----------------------------------------------------------------------------
