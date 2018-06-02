@@ -1,6 +1,13 @@
 #!/bin/sh
-# Date: 2017-11-26
-# Author: www.leemann.se/fredrik - www.youtube.com/user/FreLee54
+# Date: 2018-06-02
+# Author: www.leemann.se/fredrik
+# YouTube: https://www.youtube.com/user/FreLee54
+##
+# WebPage: http://www.leemann.se/fredrik
+# Donate: https://www.paypal.me/freddan88
+# GitHub: https://github.com/freddan88/pxesrv-linux
+##
+# Tutorial: http://www.leemann.se/fredrik/tutorials/project-pxesrv-v2-compile-network-boot-server
 ##
 ### BEGIN INIT INFO
 # Provides:          pxesrv
@@ -17,7 +24,6 @@
 ## Insserv: https://help.directadmin.com/item.php?id=379
 ########################################################
 ## Configuration:
-#
 ROOT=/srv/pxesrv
 #
 ## Do not edit bellow those lines!

@@ -1,14 +1,6 @@
 #!/bin/sh
-# Date: 2018-06-02
-# Author: www.leemann.se/fredrik
-# YouTube: https://www.youtube.com/user/FreLee54
-##
-# WebPage: http://www.leemann.se/fredrik
-# Donate: https://www.paypal.me/freddan88
-# GitHub: https://github.com/freddan88/pxesrv-linux
-##
-# Tutorial: http://www.leemann.se/fredrik/tutorials/project-pxesrv-v2-compile-network-boot-server
-#
+# Updated: 2017-11-26
+# Script: www.leemann.se/fredrik | www.youtube.com/user/FreLee54
 # Dnsmasq: http://www.thekelleys.org.uk/dnsmasq/doc.html
 # Lighttpd: https://www.lighttpd.net
 #################
@@ -23,7 +15,6 @@ service_user=pxesrv
 service_group=pxesrv
 
 s1_src=http://www.thekelleys.org.uk/dnsmasq/dnsmasq-2.77.tar.gz
-#s1_src=https://src.fedoraproject.org/repo/pkgs/dnsmasq/dnsmasq-2.66.tar.gz/c5eb8fb88847a5e9bf18db67c74efd47/dnsmasq-2.66.tar.gz
 s2_src=https://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.45.tar.gz
 ###################################################################################
 if [ "$(id -u)" != "0" ]; then
@@ -138,10 +129,9 @@ rm -rf $root_folder/tmp/src/build >/dev/null
 		cd $root_folder/tmp/src && wget -O dnsmasq.tar.gz $s1_src 2>/dev/null
 		cd $root_folder/tmp/src && tar -zxf dnsmasq.tar.gz -C $root_folder/tmp/src/build 2>/dev/null
 		cd $root_folder/tmp/src/build/dnsmasq*
-		
-			mv Makefile Makefile.bak
-	echo "PREFIX        = $root_folder" > Makefile
-			tail -n +22 Makefile.bak >> Makefile
+		sed -i 's/usr/srv/g' Makefile
+		sed -i 's/local/pxesrv/g' Makefile
+		sed -i 's/pxesrve/locale/g' Makefile
 		make && make install && cd $root_folder
 		rm -rf $root_folder/tmp/src/build
 	echo " "
