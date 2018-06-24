@@ -1,5 +1,11 @@
 @echo off
 
+title Generating winpe_x86.iso - [winpe-32Bit]
+
+REM Cleanup
+dism /cleanup-wim
+rmdir /S /Q winpe_x86
+
 REM Create directories:
 mkdir C:\winpe\winpe_x86
 cd C:\winpe\winpe_x86
@@ -24,8 +30,8 @@ xcopy "%ProgramFiles%\Windows AIK\Tools\x86" mount /E
 copy /Y C:\winpe\startnet\winpe_startnet_x86.txt mount\Windows\System32\startnet.cmd
 
 echo.
-echo Install device drivers if needed. Se Example.txt for help.
-echo ----------------------------------------------------------
+echo Install device drivers if needed. Se examples.txt or run winpe\drivers\install_32.bat
+echo -------------------------------------------------------------------------------------
 pause
 
 dism /unmount-wim /mountdir:mount /commit

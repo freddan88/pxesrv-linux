@@ -1,5 +1,11 @@
 @echo off
 
+title Generating winpe_x64.iso - [winpe-64Bit]
+
+REM Cleanup
+dism /cleanup-wim
+rmdir /S /Q winpe_x64
+
 REM Create directories:
 mkdir C:\winpe\winpe_x64
 cd C:\winpe\winpe_x64
@@ -24,8 +30,8 @@ xcopy "%ProgramFiles%\Windows AIK\Tools\amd64" mount /E
 copy /Y C:\winpe\startnet\winpe_startnet_x64.txt mount\Windows\System32\startnet.cmd
 
 echo.
-echo Install device drivers if needed. Se Example.txt for help.
-echo ----------------------------------------------------------
+echo Install device drivers if needed. Se examples.txt or run winpe\drivers\install_64.bat
+echo -------------------------------------------------------------------------------------
 pause
 
 dism /unmount-wim /mountdir:mount /commit

@@ -1,0 +1,7 @@
+Extract 64Bit drivers for winpe in this directory
+Use C:\winpe\drivers\install_64.bat to install them
+
+Example driver package for winpe 64Bit:
+- rt64win7.cat
+- rt64win7.sys
+- ws64win7.inf
