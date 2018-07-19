@@ -6,6 +6,7 @@ YouTube: https://www.youtube.com/user/FreLee54
 GitHub: https://github.com/freddan88/pxesrv-linux
 
 Tutorial: http://www.leemann.se/fredrik/tutorials/project-pxesrv-v2-compile-network-boot-server
+Download: http://www.leemann.se/fredrik/file_downloads/httpsrv_linux-server_2.0.zip
 
 Description:
 ------------
