@@ -1,0 +1,1 @@
+Extract content from your Windows 10 32Bit installation media
