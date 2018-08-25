@@ -28,7 +28,7 @@ s2_src=https://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.45.tar
 ###################################################################################
 if [ "$(id -u)" != "0" ]; then
 	echo " "
-	echo "PLEASE RUN THIS SCRIPT AS root_folder OR SUDO!"
+	echo "PLEASE RUN THIS SCRIPT AS ROOT OR SUDO!"
 	echo "---------------------------------------"
 	exit
 fi
