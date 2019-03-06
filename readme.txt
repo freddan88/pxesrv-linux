@@ -20,9 +20,11 @@ Security and bugs shall be reported to each individual project
 This script is only tested with softwareversions found in the script
 The script is only tested with: CentOS6, CentOS7 and Ubuntu 16.04 Linux
 
------------------------------------------------------------------------------
+-----------------------------------------------------------------------
 
 License MIT: https://choosealicense.com/licenses/mit
+
+----------------------------------------------------
 
 Actions in script:
 
