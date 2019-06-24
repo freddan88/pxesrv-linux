@@ -9,6 +9,9 @@ Tutorial: http://www.leemann.se/fredrik/tutorials/project-pxesrv-v2-compile-netw
 Download: http://www.leemann.se/fredrik/file_downloads/httpsrv_linux-server_2.0.zip
 Video (SWE) https://www.youtube.com/watch?v=gJfK99RntxA&t=11s
 
+Playlist PXESRV - YouTube
+https://www.youtube.com/playlist?list=PLgwpw8nEhjkV4-S7cCYv72V2T19GW4qVi
+
 Description:
 ------------
 Easy to use script to compile and install dnsmasq, lighttpd to use a pxe
