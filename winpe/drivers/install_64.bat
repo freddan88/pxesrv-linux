@@ -11,6 +11,6 @@ pause
 FOR /F %%D IN (drivers_64.txt) DO dism /add-driver /image:C:\winpe\winpe_x64\mount /driver:%%D
 del /F /Q C:\winpe\drivers\drivers_64.txt
 
-REM Lista installed drivers
+REM List installed drivers
 dism /get-drivers /image:C:\winpe\winpe_x64\mount
 pause
