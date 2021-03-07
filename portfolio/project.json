@@ -1,0 +1,26 @@
+{
+  "projectName": "Pxesrv 2.0 Linux",
+  "projectOriginIndex": 0,
+  "projectCreatedAt": "2018-05-22",
+  "projectResourceCategoryIndex": 0,
+  "projectResource": "http://www.leemann.se/fredrik/tutorials/project-pxesrv-v2-compile-network-boot-server",
+  "projectGitHubUrl": "https://github.com/freddan88/pxesrv-linux",
+  "projectImage": "",
+  "projectDescription": "Personal project and interest in both networks, Linux and Windows deployments. Here I use open source programs with my own configuration to create a network-boot server (pxe) using gpxe",
+  "licenseUrl": "https://choosealicense.com/licenses/mit",
+  "licenseName": "License: MIT",
+  "projectTechnologies": [
+    "Windows",
+    "Linux",
+    "Ubuntu",
+    "CentOS",
+    "Bash",
+    "Batch",
+    "Winpe",
+    "Dnsmasq",
+    "Lighttpd",
+    "syslinux",
+    "gpxe",
+    "pxe"
+  ]
+}
