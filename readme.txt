@@ -1,8 +1,6 @@
 Links:
 ------
 WebPage: http://www.leemann.se/fredrik
-Donate: https://www.paypal.me/freddan88
-YouTube: https://www.youtube.com/user/FreLee54
 GitHub: https://github.com/freddan88/pxesrv-linux
 
 Tutorial: http://www.leemann.se/fredrik/tutorials/project-pxesrv-v2-compile-network-boot-server
